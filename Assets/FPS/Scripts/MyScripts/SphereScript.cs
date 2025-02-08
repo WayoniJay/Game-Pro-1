@@ -1,21 +1,24 @@
 using UnityEngine;
 
-public class SphereScript : MonoBehaviour
+namespace AG2189
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    public float amp;
-    public float freq;
-    Vector3 initPos;
-
-    private void Start()
+    public class SphereScript : MonoBehaviour
     {
-        initPos = transform.position;
-    }
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    // Update is called once per frame
-    private void Update()
-    {
-        transform.position = new Vector3(initPos.x, initPos.y + Mathf.Sin(Time.time * freq) * amp * initPos.y, initPos.z);
-    }
+        private float amp = 0.3f;
+        private float freq = 3;
+        Vector3 initPos;
+
+        private void Start()
+        {
+            initPos = transform.position;
+        }
+
+        // Update is called once per frame
+        private void Update()
+        {
+            transform.position = new Vector3(initPos.x, initPos.y + Mathf.Sin(Time.time * freq) * amp * initPos.y, initPos.z);
+        }
+    } 
 }

@@ -1,15 +1,19 @@
 using UnityEngine;
 
-public class ColorChange : MonoBehaviour
+namespace AG2189
 {
-
-    Renderer ren;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class ColorChange : MonoBehaviour
     {
-       ren=GetComponent<Renderer>();
-       ren.material.color = Color.blue;
+
+        Renderer ren;
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            ren = GetComponent<Renderer>();
+            ren.material.color = Color.blue;
+        }
+
+
     }
 
- 
 }
