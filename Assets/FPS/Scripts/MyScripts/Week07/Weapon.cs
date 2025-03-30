@@ -9,6 +9,7 @@ namespace AG2189
         [SerializeField] private float modifier = 0.0f;
         //[SerializeField] private bool isNotUsable = false;
         public WeaponTypes weaponType;
+       
 
         public virtual void Equip()
         {

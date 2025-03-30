@@ -1,4 +1,3 @@
-using AG2189;
 using UnityEngine;
 
 namespace AG2189

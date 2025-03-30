@@ -1,5 +1,4 @@
 using AG2189;
-using UnityEngine;
 
 public class Spear : Weapon, IThrowable, IBreakable
 {
