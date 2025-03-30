@@ -8,7 +8,7 @@ namespace AG2189
         [SerializeField] private bool hasEquiped = false;
         [SerializeField] private bool canUnEquip = false;
         [SerializeField] private float coolDownForEquip = 5.0f;
-        [SerializeField] private float damage = 5.0f;
+        [SerializeField] private new float damage = 5.0f;
         [SerializeField] private float damageDone = 0.0f;
 
         private void Start()
